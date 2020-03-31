@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="bg">
+
+<app-logo></app-logo><br>
+<app-header></app-header><br><br><br>
+<p class="p6">TOWELS & BATH MATS</p>
+<div class="row">
+  <div class="col-md-4" *ngFor="let product of products">
+    <div *ngIf="product.type == 1">
+    <div class="card mb-4 shadow-sm">
+      <div class="imageBox">
+        <div class="imageInn">
+      <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="product.photo" />
+        </div>
+        <div class="hoverImg">
+        <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="product.photo1" />    
+        </div>
+      
+      <div class="card-body">
+        <p class="card-text">
+          <strong>{{ product.name }}</strong><br><br>
+          <strong >{{ product.price | currency:'INR' }}</strong >
+        </p>
+        <!-- <p class="card-text">{{ productItem.description }}</p> -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary btn-sm"><a [routerLink]="['/cart', { id:product.id }]">Add to Cart</a></button>
+            <button type="button" class="btn btn-light btn-sm">View Details</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="p6">SHOWER CURTAINS</p>
+<div class="row">
+  <div class="col-md-4" *ngFor="let product of products">
+    <div *ngIf="product.type == 8">
+    <div class="card mb-4 shadow-sm">
+      <div class="imageBox">
+        <div class="imageInn">
+      <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="product.photo" />
+        </div>
+        <div class="hoverImg">
+        <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="product.photo1" />    
+        </div>
+      
+      <div class="card-body">
+        <p class="card-text">
+          <strong>{{ product.name }}</strong><br><br>
+          <strong >{{ product.price | currency:'INR' }}</strong >
+        </p>
+        <!-- <p class="card-text">{{ productItem.description }}</p> -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary btn-sm"><a [routerLink]="['/cart', { id:product.id }]">Add to Cart</a></button>
+            <button type="button" class="btn btn-light btn-sm">View Details</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="p6">TABLEWARE</p>
+<div class="row">
+  <div class="col-md-4" *ngFor="let product of products">
+    <div *ngIf="product.type == 9">
+    <div class="card mb-4 shadow-sm">
+      <div class="imageBox">
+        <div class="imageInn">
+      <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="product.photo" />
+        </div>
+        <div class="hoverImg">
+        <img class="bd-placeholder-img card-img-top p-2" width="100%" [src]="product.photo1" />    
+        </div>
+      
+      <div class="card-body">
+        <p class="card-text">
+          <strong>{{ product.name }}</strong><br><br>
+          <strong >{{ product.price | currency:'INR' }}</strong >
+        </p>
+        <!-- <p class="card-text">{{ productItem.description }}</p> -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary btn-sm"><a [routerLink]="['/cart', { id:product.id }]">Add to Cart</a></button>
+            <button type="button" class="btn btn-light btn-sm">View Details</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<app-footer></app-footer>

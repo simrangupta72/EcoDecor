@@ -1,0 +1,11 @@
+.bgrnd{
+    background-image: url("/assets/background.jpg"); 
+height: 650px;
+width:100%;
+background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.bg{
+	background-color: #f2f0f1;
+}
