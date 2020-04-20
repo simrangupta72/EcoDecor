@@ -1,17 +1,51 @@
 img{
     display: block;
-  margin-left: auto;
+  margin-left: 535px;
   margin-right: auto;
   height: 145px;
 }
 span{
     float: right;
-    font-size: 25px;
-    color: #c43a2f;
+    font-size: 30px;
+    color: hsl(4, 61%, 48%);
     line-height: 2;
     margin-right: 10px;
 }
 button{
   float:right;
   padding: 0px;
+  font-family: "Maiandra GD";
+}
+.btn-danger{
+  float: right;
+  font-size: 16px;
+  line-height: 2;
+  margin-right: 10px;
+  margin-top: 14px;
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: none;
 }

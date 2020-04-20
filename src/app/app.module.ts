@@ -19,6 +19,12 @@ import { CartComponent } from './cart/cart.component';
 import { ProductService } from './services/product.service';
 import { FurnitureComponent } from './furniture/furniture.component';
 import { BeddingComponent } from './bedding/bedding.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+  import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatExpansionModule,MatIconModule } from '@angular/material';
+// import { DetailsComponent } from './details/details.component';
 //import { CartItemComponent } from './cart/cart-item/cart-item.component';
 
 
@@ -37,11 +43,22 @@ import { BeddingComponent } from './bedding/bedding.component';
     CartComponent,
     FurnitureComponent,
     BeddingComponent,
+    SignupComponent,
+    LoginComponent,
+    // DetailsComponent,
     //CartItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatExpansionModule,
+    MatIconModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     SliderModule,
     RouterModule.forRoot([
@@ -49,7 +66,9 @@ import { BeddingComponent } from './bedding/bedding.component';
       {path: 'bath', component: BathComponent},
       {path: 'cart', component: CartComponent},
       {path: 'furniture', component: FurnitureComponent},
-      {path: 'bedding', component: BeddingComponent}
+      {path: 'bedding', component: BeddingComponent},
+      {path: 'signup', component: SignupComponent},
+      {path: 'login', component: LoginComponent}
     ])
   ],
   providers: [ProductService],
