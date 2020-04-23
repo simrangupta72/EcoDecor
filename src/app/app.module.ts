@@ -69,6 +69,14 @@ import { FormsModule } from '@angular/forms';
       {path: 'bedding', component: BeddingComponent},
       {path: 'signup', component: SignupComponent},
       {path: 'login', component: LoginComponent}
+      // {path: 'bath/:id', component: BathComponent},
+      // {path: 'bath/Curtains', component: BathComponent},
+      // {path: 'bath/Tableware', component: BathComponent},
+      // {path: 'furniture/:id', component: FurnitureComponent},
+      // {path: 'furniture/Tables', component: FurnitureComponent},
+      // {path: 'furniture/Ottomans', component: FurnitureComponent},
+      // {path: 'bedding/:id', component: BeddingComponent}
+      // {path: 'bedding/Sheets', component: BeddingComponent}
     ])
   ],
   providers: [ProductService],

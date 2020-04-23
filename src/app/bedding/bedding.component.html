@@ -3,7 +3,7 @@
 
 <app-logo></app-logo><br>
 <app-header></app-header><br><br><br>
-<p class="p6">BED BLANKETS</p>
+<p class="p6" id="Bed">BED BLANKETS</p>
 <div class="row">
   <div class="col-md-4" *ngFor="let product of products">
     <div *ngIf="product.type == 2">
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<p class="p6">SHEETS & PILLOWCASES</p>
+<p class="p6" id="Sheets">SHEETS & PILLOWCASES</p>
 <div class="row">
   <div class="col-md-4" *ngFor="let product of products">
     <div *ngIf="product.type == 6">
