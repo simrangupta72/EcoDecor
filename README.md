@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
+It is an Ecommerce Website created by the concept of having only eco-friendly products which contributes to the environment in some way and also has in mind to look out for the artisans who dont get enough credit which they deserve and are exploited in many ways.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
